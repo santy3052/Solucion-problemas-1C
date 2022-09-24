@@ -1,1 +1,0 @@
-# Solucion-problemas-1C

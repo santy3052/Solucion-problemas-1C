@@ -1,0 +1,9 @@
+#GENERADOR DE CONTRASEÑAS
+import random
+num=int(input('determine la longitud que desee para su clave'))
+def contraseña(num):
+    clave = ''
+    for i in range(num):
+        clave+= random.choice('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,;.:-_{[}]+*!"#$%&/()=?')
+    return clave
+print(f'Su nueva clave es: {contraseña(num)}')
