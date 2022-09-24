@@ -1,4 +1,10 @@
 #GENERADOR DE CONTRASEÑAS
+#Usando la librería random y una función que contenga las letras minusculas, mayusculas (sin tilde), números y simbolos 
+#Las organice de una manera aleatoria y muestre una contraseña del tamaño asignado 
+
+Ej:       15 caracteres =======> Tu nueva contraseña es: Be?t]<N_ñZ8e8U(
+
+#Solucion
 import random
 num=int(input('determine la longitud que desee para su clave'))
 def contraseña(num):
