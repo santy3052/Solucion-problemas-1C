@@ -4,11 +4,11 @@
 
 
 #Solucion
-import random
-num=int(input('determine la longitud que desee para su clave'))
+import random   # se importa la libreria requerida
+num=int(input('determine la longitud que desee para su clave')) # se le pide al usuario definir que tan larga desea su contraseña nueva
 def contraseña(num):
-    clave = ''
-    for i in range(num):
-        clave+= random.choice('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,;.:-_{[}]+*!"#$%&/()=?')
+    clave = ''  #se crea la variable para la clave nueva
+    for i in range(num):    # se repite la funcion para generar la contraseña de la longitud requerida
+        clave+= random.choice('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,;.:-_{[}]+*!"#$%&/()=?')  # se da la eleccion de los caracteres 
     return clave
-print(f'Su nueva clave es: {contraseña(num)}')
+print(f'Su nueva clave es: {contraseña(num)}')  #se imprime la clave
