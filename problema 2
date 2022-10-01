@@ -4,6 +4,7 @@
 # Nota: El ejercicio no se debe realizar con ninguna función que permita la realización de este ejercicio, 
 # se debe realizar con la lógica matemática de cada uno y el uso de estructuras  de control.
 
+#SOLUCION
 n_p=int(input('ingrese el numero que desea comnprobar si es primo'))
 a=1
 cuen=0
