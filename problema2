@@ -1,0 +1,17 @@
+#EJERCICIO NUMERO PRIMO- MAURICIO MORA
+# Realizar un programa que le permita al usuario Ingresar un número y que este mismo le determine si es número PRIMO o no lo es. 
+
+# Nota: El ejercicio no se debe realizar con ninguna función que permita la realización de este ejercicio, 
+# se debe realizar con la lógica matemática de cada uno y el uso de estructuras  de control.
+
+n_p=int(input('ingrese el numero que desea comnprobar si es primo'))
+a=1
+cuen=0
+while a<=n_p:
+    if n_p%a==0:
+        cuen+=1
+    a+=1
+if cuen==2:
+    print(f'el numero {n_p} SI es primo')
+else:
+    print(f'el numero {n_p} NO es primo')
