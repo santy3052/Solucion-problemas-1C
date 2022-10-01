@@ -5,14 +5,14 @@
 # se debe realizar con la lógica matemática de cada uno y el uso de estructuras  de control.
 
 #SOLUCION
-n_p=int(input('ingrese el numero que desea comnprobar si es primo'))
+n_p=int(input('ingrese el numero que desea comnprobar si es primo'))    # se le pide al usuario el numero deseado 
 a=1
-cuen=0
-while a<=n_p:
-    if n_p%a==0:
-        cuen+=1
+cuen=0  
+while a<=n_p:       #condicion para encontrar los divisores del numero
+    if n_p%a==0:    #se da la condicion para buscar si el numero es primo
+        cuen+=1     #se producen las condicion para evitar un bucle infinito
     a+=1
 if cuen==2:
-    print(f'el numero {n_p} SI es primo')
+    print(f'el numero {n_p} SI es primo')   # se imprime el resultado 
 else:
-    print(f'el numero {n_p} NO es primo')
+    print(f'el numero {n_p} NO es primo')   # se imprime el resultado 
