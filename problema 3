@@ -1,0 +1,37 @@
+  #Que hora es?
+  Pregunta: Teniendo en cuenta lo visto el corte 1 y el 2 haga un reloj que diga la hora,Minutos o segundos 
+  este tiene que decir alguna de estas o todas ,este ejercicio tiene que coincidir con la hora actual teniendo 
+  en cuenta los ejerciocios de recursios, puede integrar librerias. 
+  
+ #def actualizacion_del_reloj():
+   etiqueta_hm.config(text=strftime("%H:%M"))
+
+# SOLUCION
+
+from tkinter import *
+from tkinter.ttk import*
+from time import strftime
+
+
+def actualizacion():
+    etiquetar_hm.config(text=strftime("%H:%M"))
+    etiqueta_s.config(text=strftime("%S"))
+    etiqueta_fecha.config(text=strftime("%A,%d/%m/%Y"))
+    etiqueta_s.after(1000,actualizacion)
+
+app = Tk()
+app.title("reloj digital")
+
+frame_hora=Frame()
+frame_hora.pack()
+etiquetar_hm=Label(frame_hora,font=("digital",100),text="HORA:MINUTOS")
+etiquetar_hm.grid(row=0,column=0)
+
+etiqueta_s=Label(frame_hora,font=("digital",50),text="segundos")
+etiqueta_s.grib(Row=0,column=1,sticky="N")
+
+etiqueta_fecha=Label(frame_hora,font=("digital",50),text='dia/d/m/aaaa')
+etiqueta_fecha.pack(anchor="center")
+
+actualizacion()
+app.mainloop()
