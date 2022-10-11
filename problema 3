@@ -20,8 +20,8 @@ def actualizacion():
     etiqueta_fecha.config(text=strftime("%A,%d/%m/%Y"))
     etiqueta_s.after(1000,actualizacion)
 
-app = Tk()
-app.title("reloj digital")
+ap = Tk()
+ap.title("reloj")
 
 frame_hora=Frame()
 frame_hora.pack()
@@ -35,4 +35,4 @@ etiqueta_fecha=Label(frame_hora,font=("digital",50),text='dia/d/m/aaaa')
 etiqueta_fecha.pack(anchor="center")
 
 actualizacion()
-app.mainloop()
+ap.mainloop()
